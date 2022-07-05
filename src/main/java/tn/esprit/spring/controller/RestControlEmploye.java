@@ -26,10 +26,15 @@ import tn.esprit.spring.services.IEmployeService;
 import tn.esprit.spring.services.IEntrepriseService;
 import tn.esprit.spring.services.ITimesheetService;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 @RestController
 public class RestControlEmploye {
 
-	
+	private static final Logger logger = LogManager.getLogger(RestControlEmploye.class);
+
+
 	@Autowired
 	IEmployeService iemployeservice;
 	@Autowired
@@ -45,6 +50,7 @@ public class RestControlEmploye {
 	@ResponseBody
 	public Employe ajouterEmploye(@RequestBody Employe employe)
 	{
+		logger.info("executing employee ...");
 		iemployeservice.ajouterEmploye(employe);
 		return employe;
 	}

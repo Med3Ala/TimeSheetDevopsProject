@@ -2170,3 +2170,137 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 2022-07-03 13:22:25,605 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [Thread-3] Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-03 13:22:25,607 INFO c.z.h.HikariDataSource [Thread-3] HikariPool-1 - Shutdown initiated...
 2022-07-03 13:22:25,610 INFO c.z.h.HikariDataSource [Thread-3] HikariPool-1 - Shutdown completed.
+2022-07-05 12:33:38,073 INFO t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application [main] Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on AM-pc with PID 20552 (C:\Users\Ala_M\Desktop\devops\timeSheet-master\timeSheet-master\target\classes started by Ala_M in C:\Users\Ala_M\Desktop\devops\timeSheet-master\timeSheet-master)
+2022-07-05 12:33:38,085 INFO t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application [main] No active profile set, falling back to default profiles: default
+2022-07-05 12:33:38,920 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-05 12:33:39,033 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 101ms. Found 6 repository interfaces.
+2022-07-05 12:33:39,536 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8248c5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-05 12:33:40,109 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:33:40,121 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2022-07-05 12:33:40,122 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-07-05 12:33:40,239 INFO o.a.c.c.C.[.[.[/SpringMVC] [main] Initializing Spring embedded WebApplicationContext
+2022-07-05 12:33:40,239 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 2092 ms
+2022-07-05 12:33:40,473 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-07-05 12:33:40,655 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-07-05 12:33:40,723 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-07-05 12:33:40,849 INFO o.h.Version [main] HHH000412: Hibernate Core {5.3.9.Final}
+2022-07-05 12:33:40,851 INFO o.h.c.Environment [main] HHH000206: hibernate.properties not found
+2022-07-05 12:33:41,047 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-07-05 12:33:41,199 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-07-05 12:33:42,137 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 12:33:42,485 INFO o.h.h.i.QueryTranslatorFactoryInitiator [main] HHH000397: Using ASTQueryTranslatorFactory
+2022-07-05 12:33:43,040 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-05 12:33:43,403 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:33:43,426 ERROR o.a.c.u.LifecycleBase [main] Failed to start component [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558) [spring-boot-maven-plugin-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:550) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:249) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 20 more
+2022-07-05 12:33:43,443 INFO o.a.c.h.Http11NioProtocol [main] Pausing ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:33:43,443 INFO o.a.c.c.StandardService [main] Stopping service [Tomcat]
+2022-07-05 12:33:43,451 INFO o.a.c.u.LifecycleBase [main] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2022-07-05 12:33:43,452 INFO o.a.c.h.Http11NioProtocol [main] Stopping ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:33:43,453 INFO o.a.c.h.Http11NioProtocol [main] Destroying ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:33:43,461 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-05 12:33:43,462 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 12:33:43,464 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2022-07-05 12:33:43,470 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2022-07-05 12:34:24,853 INFO t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application [main] Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on AM-pc with PID 25884 (C:\Users\Ala_M\Desktop\devops\timeSheet-master\timeSheet-master\target\classes started by Ala_M in C:\Users\Ala_M\Desktop\devops\timeSheet-master\timeSheet-master)
+2022-07-05 12:34:24,866 INFO t.e.s.TimesheetSpringBootCoreDataJpaMvcRest1Application [main] No active profile set, falling back to default profiles: default
+2022-07-05 12:34:25,720 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-07-05 12:34:25,813 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87ms. Found 6 repository interfaces.
+2022-07-05 12:34:26,285 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$777402c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-05 12:34:26,748 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:34:26,764 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2022-07-05 12:34:26,765 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2022-07-05 12:34:26,877 INFO o.a.c.c.C.[.[.[/SpringMVC] [main] Initializing Spring embedded WebApplicationContext
+2022-07-05 12:34:26,877 INFO o.s.w.c.ContextLoader [main] Root WebApplicationContext: initialization completed in 1937 ms
+2022-07-05 12:34:27,098 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-07-05 12:34:27,286 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-07-05 12:34:27,368 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-07-05 12:34:27,454 INFO o.h.Version [main] HHH000412: Hibernate Core {5.3.9.Final}
+2022-07-05 12:34:27,456 INFO o.h.c.Environment [main] HHH000206: hibernate.properties not found
+2022-07-05 12:34:27,577 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-07-05 12:34:27,720 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-07-05 12:34:28,659 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 12:34:28,996 INFO o.h.h.i.QueryTranslatorFactoryInitiator [main] HHH000397: Using ASTQueryTranslatorFactory
+2022-07-05 12:34:29,643 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-05 12:34:30,085 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:34:30,115 ERROR o.a.c.u.LifecycleBase [main] Failed to start component [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:558) [spring-boot-maven-plugin-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:550) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:249) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88) ~[?:?]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 20 more
+2022-07-05 12:34:30,135 INFO o.a.c.h.Http11NioProtocol [main] Pausing ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:34:30,135 INFO o.a.c.c.StandardService [main] Stopping service [Tomcat]
+2022-07-05 12:34:30,141 INFO o.a.c.u.LifecycleBase [main] The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2022-07-05 12:34:30,142 INFO o.a.c.h.Http11NioProtocol [main] Stopping ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:34:30,143 INFO o.a.c.h.Http11NioProtocol [main] Destroying ProtocolHandler ["http-nio-8081"]
+2022-07-05 12:34:30,151 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-05 12:34:30,152 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-05 12:34:30,154 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2022-07-05 12:34:30,159 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
